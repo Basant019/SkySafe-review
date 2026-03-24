@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkySafe | Weather Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/map.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="dashboard.html">SkySafe</a>
+        <span class="navbar-text text-light">Live Weather Map</span>
+    </div>
+</nav>
+
+<!-- INFO -->
+<div class="container text-center mt-4">
+    <h4 id="mapCity">Loading city...</h4>
+    <p class="text-muted">City selected from Weather Page</p>
+</div>
+
+<!-- MAP -->
+<div class="container mt-3">
+    <div id="map"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- JS -->
+<script src="js/map.js"></script>
+
+</body>
+</html>

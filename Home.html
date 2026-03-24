@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkySafe | Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/Home.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="dashboard.html">SkySafe</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="weather.html">Weather</a></li>
+                <li class="nav-item"><a class="nav-link" href="aleart.html">Alert</a></li>
+                <li class="nav-item"><a class="nav-link" href="disaster.html">Disaster Hub</a></li>
+                <li class="nav-item"><a class="nav-link" href="trip.html">Trip Planner</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-warning" href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO / WELCOME SECTION -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1>Welcome <span id="uname">Guest</span> 👋</h1>
+        <p class="lead mt-3">
+            Your Smart Companion for Weather Updates & Safe Travel Decisions
+        </p>
+        <p class="hero-subtext">
+            SkySafe provides real-time weather information, live alerts,
+            and intelligent trip planning to help you stay prepared
+            for every journey.
+        </p>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="container my-5">
+    <h2 class="text-center section-title">What SkySafe Offers</h2>
+
+    <div class="row g-4 mt-4 text-center">
+        <div class="col-md-3">
+            <div class="feature-card">
+                🌦
+                <h5>Real-Time Weather</h5>
+                <p>
+                    Get accurate temperature, humidity, wind speed,
+                    and weather conditions for any city worldwide.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card">
+                ⚠
+                <h5>Live Weather Alerts</h5>
+                <p>
+                    Stay informed about storms, heavy rain,
+                    heatwaves, and extreme weather risks.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card">
+                🧭
+                <h5>Smart Trip Planner</h5>
+                <p>
+                    Check if weather conditions are safe
+                    before planning your travel.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="feature-card">
+                📊
+                <h5>Forecast Analysis</h5>
+                <p>
+                    View detailed 5-day forecasts
+                    to plan ahead with confidence.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY SKySAFE -->
+<section class="why-section">
+    <div class="container text-center">
+        <h2 class="section-title text-light">Why Choose SkySafe?</h2>
+        <p class="text-light mt-3">
+            SkySafe is designed to go beyond basic weather applications.
+            It focuses on safety, decision-making, and user convenience
+            by combining weather data with travel insights.
+        </p>
+
+        <div class="row mt-4">
+            <div class="col-md-4 text-light">✔ Simple & User-Friendly Interface</div>
+            <div class="col-md-4 text-light">✔ Real-Time & Forecast-Based Decisions</div>
+            <div class="col-md-4 text-light">✔ Built Using Modern Web Technologies</div>
+        </div>
+    </div>
+</section>
+<!-- HOW IT WORKS -->
+<section class="container my-5">
+    <h2 class="text-center section-title">How SkySafe Works</h2>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-3 text-center">
+            <div class="feature-card">
+                <h3>1️⃣</h3>
+                <h5>Search Location</h5>
+                <p>
+                    User selects a city from the Weather page.
+                    The city is stored securely using localStorage.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div class="feature-card">
+                <h3>2️⃣</h3>
+                <h5>Fetch Live Data</h5>
+                <p>
+                    SkySafe fetches real-time and forecast weather data
+                    using trusted weather APIs.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div class="feature-card">
+                <h3>3️⃣</h3>
+                <h5>Analyze Risk</h5>
+                <p>
+                    Weather conditions like rain, storms, and temperature
+                    are analyzed to determine safety levels.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div class="feature-card">
+                <h3>4️⃣</h3>
+                <h5>Smart Decision</h5>
+                <p>
+                    Users receive alerts, safety scores,
+                    and trip recommendations instantly.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TECHNOLOGY STACK -->
+<section class="container my-5">
+    <h2 class="text-center section-title">Technology Stack Used</h2>
+
+    <div class="row g-4 mt-4 text-center">
+        <div class="col-md-2 feature-card">HTML5</div>
+        <div class="col-md-2 feature-card">CSS3</div>
+        <div class="col-md-2 feature-card">Bootstrap 5</div>
+        <div class="col-md-2 feature-card">JavaScript</div>
+        <div class="col-md-2 feature-card">Weather API</div>
+        <div class="col-md-2 feature-card">LocalStorage</div>
+    </div>
+
+    <p class="text-center mt-4 text-muted">
+        These technologies help SkySafe deliver fast performance,
+        responsive design, and real-time data handling.
+    </p>
+</section>
+<!-- USE CASES -->
+<section class="container my-5">
+    <h2 class="text-center section-title">Real-Life Use Cases</h2>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h5>🚗 Travelers</h5>
+                <p>
+                    Helps travelers decide the safest time to travel
+                    based on weather conditions.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h5>🏫 Students</h5>
+                <p>
+                    Useful for daily commuting, exam travel planning,
+                    and outdoor activities.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h5>🚜 Outdoor Workers</h5>
+                <p>
+                    Helps workers stay alert about extreme weather
+                    like heatwaves or storms.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FUTURE SCOPE -->
+<section class="container my-5">
+    <h2 class="text-center section-title">Future Enhancements</h2>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-3 feature-card">📍 GPS-Based Auto Location</div>
+        <div class="col-md-3 feature-card">🗺 Interactive Route Maps</div>
+        <div class="col-md-3 feature-card">📱 Mobile App Version</div>
+        <div class="col-md-3 feature-card">🤖 AI-Based Weather Prediction</div>
+    </div>
+</section>
+
+<!-- ACTION CARDS -->
+<section class="container my-5">
+    <h2 class="text-center section-title">Get Started</h2>
+
+    <div class="row g-4 text-center mt-4">
+
+        <div class="col-md-4">
+            <div class="card custom-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Check Weather</h5>
+                    <p class="card-text">
+                        Search any city and get live weather updates instantly.
+                    </p>
+                    <a href="weather.html" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card custom-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">View Alerts</h5>
+                    <p class="card-text">
+                        Monitor weather risks and safety alerts in real time.
+                    </p>
+                    <a href="aleart.html" class="btn btn-primary">View Alerts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card custom-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Plan a Trip</h5>
+                    <p class="card-text">
+                        Check travel safety and best time before you go.
+                    </p>
+                    <a href="trip.html" class="btn btn-primary">Plan Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Username Script -->
+<script>
+    let user = document.getElementById("uname");
+    let name = localStorage.getItem("uname");
+    user.textContent = name ? name : "Guest";
+</script>
+
+</body>
+</html>
